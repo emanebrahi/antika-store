@@ -1,0 +1,125 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(252, 252, 244);
+}
+.navbar {
+  background-color: rgb(52, 38, 38);
+}
+a {
+  color: white !important;
+}
+.signup-form {
+  border: 1px solid rgb(222, 220, 210);
+  border-radius: 10px;
+  box-shadow: 5px 5px 60px 10px rgb(52, 38, 38);
+  transform: translateY(50%);
+  padding: 2rem;
+  width: 50vw;
+}
+.cart i {
+  position: relative;
+  font-size: 30px;
+  color: rgb(255, 255, 255);
+}
+.cart {
+  cursor: pointer;
+  position: relative;
+  margin: 0px 40px;
+}
+.cart .cart-product {
+  width: 310px;
+  left: -100px;
+  text-align: center;
+  z-index: 10;
+  position: absolute;
+  display: none;
+  background-color: rgb(40, 44, 43);
+  color: white;
+}
+.cart .badge {
+  position: absolute;
+  top: -10px;
+  left: 0;
+  display: block;
+  transform: translate(30px);
+  background-color: red;
+  border-radius: 50%;
+}
+.logout {
+  display: none;
+}
+.add-to-cart,
+.remove {
+  background-color: beige;
+  border: 1px solid beige;
+  color: rgb(39, 28, 28);
+  font-size: 15px;
+  padding: 8px 50px;
+}
+.add-to-cart:hover {
+  cursor: pointer;
+  background-color: beige;
+  border: 1px solid beige;
+  color: rgb(39, 28, 28);
+}
+.add-to-cart:focus{
+  background-color: rgb(54, 50, 37);
+  border: 1px solid beige;
+  box-shadow: none;
+  
+}
+.card {
+  color: beige;
+  background-color: rgb(52, 38, 38);
+  box-shadow: 1px 1px 5px 5px gray, -1px -1px 5px 5px gray;
+  margin: 30px;
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  transition: 2s;
+  text-align: center;
+
+}
+.card:hover {
+  transform: scale(1.1);
+}
+.card h5{
+  margin-bottom: 20px;
+}
+.card img {
+  padding: 20px;
+  border-radius: 30px;
+  transition: 2s;
+}
+.card img:hover {
+  transform: skew(5deg);
+}
+.no-items-in-cart,
+.log-out-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(200, 7, 7);
+  border-radius: 20px;
+  color: white;
+  width: 200px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.log-out-text{
+  width: 500px;
+
+
+}
+@media (max-width: 768px) {
+  .signup-form {
+    width: 100vw;
+  }
+}
